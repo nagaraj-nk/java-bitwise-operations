@@ -3,6 +3,7 @@ public class BitwiseOperations {
         BitwiseOperations bitwiseOperations = new BitwiseOperations();
         bitwiseOperations.setSpecificBitInNumber();
         bitwiseOperations.unsetSpecificBitInNumber();
+        bitwiseOperations.notOperator();
     }
 
     private void setSpecificBitInNumber() {
@@ -26,5 +27,13 @@ public class BitwiseOperations {
         // after left shift of 1 - 001
         // not of above value is   100
         // bitwise AND between 100 - 101 is 100 that is 4
+    }
+
+    private void notOperator() {
+        System.out.println("--not operator--");
+        int a = 0; // 4 => 100
+        a = ~a; // ~100 => 011
+        System.out.println("Ans=" + a);
+        System.out.println("---");
     }
 }
